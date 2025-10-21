@@ -87,23 +87,23 @@
     <h1>🎨 Shader 学习之旅</h1>
     
     <div class="learning-path">
-      <h3>📚 学习路线</h3>
-      <div class="path-item current">1. 颜色渐变 - 基于位置的颜色变化 (当前)</div>
-      <div class="path-item">2. 时间动画 - 基于时间的动态效果</div>
-      <div class="path-item">3. 图形绘制 - 圆形、线条等基本图形</div>
-      <div class="path-item">4. 纹理贴图 - 图片纹理的应用</div>
-      <div class="path-item">5. 几何变换 - 缩放、旋转、平移</div>
-      <div class="path-item">6. 光照效果 - 基础光照模型</div>
-      <div class="path-item">7. 高级效果 - 后处理、粒子系统</div>
+      <h3>📚 学习路线 (基于Three.js)</h3>
+      <div class="path-item current">1. 颜色渐变 - Fragment Shader基础 (当前)</div>
+      <div class="path-item">2. 时间动画 - 动态uniform传值</div>
+      <div class="path-item">3. 图形绘制 - SDF距离场函数</div>
+      <div class="path-item">4. 纹理贴图 - Three.js纹理系统</div>
+      <div class="path-item">5. 几何变换 - Vertex Shader变换</div>
+      <div class="path-item">6. 光照效果 - 内置光照系统扩展</div>
+      <div class="path-item">7. 高级效果 - 后处理通道、粒子着色器</div>
     </div>
 
     <div class="demo-section">
-      <h3 class="demo-title">Demo 1: 颜色渐变</h3>
+      <h3 class="demo-title">Demo 1: 颜色渐变 (Three.js版本)</h3>
       <p class="demo-description">
-        这是最基础的shader示例，展示如何基于屏幕坐标生成颜色渐变效果。
-        <br>• 红色分量从左到右渐变 (0→1)
-        <br>• 绿色分量从下到上渐变 (0→1)  
-        <br>• 蓝色分量固定为0.8
+        使用Three.js的ShaderMaterial创建自定义shader。Three.js简化了WebGL操作，让我们专注于shader逻辑。
+        <br>• 使用gl_FragCoord获取片段坐标
+        <br>• 通过uniform传递分辨率参数
+        <br>• Three.js自动处理顶点变换
       </p>
       <canvas id="canvas1"></canvas>
     </div>
