@@ -63,6 +63,8 @@ export function startDemo1(canvas: HTMLCanvasElement) {
 
   // 渲染函数
   function render() {
+    if (!gl || !program) return
+    
     resizeCanvasToDisplaySize(canvas)
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height)
 
