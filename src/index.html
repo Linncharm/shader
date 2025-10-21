@@ -88,9 +88,9 @@
     
     <div class="learning-path">
       <h3>📚 学习路线 (基于Three.js)</h3>
-      <div class="path-item current">1. 颜色渐变 - Fragment Shader基础 (当前)</div>
+      <div class="path-item">1. 颜色渐变 - Fragment Shader基础</div>
       <div class="path-item">2. 时间动画 - 动态uniform传值</div>
-      <div class="path-item">3. 图形绘制 - SDF距离场函数</div>
+      <div class="path-item current">3. 图形绘制 - SDF距离场函数 (阶段2和3已完成)</div>
       <div class="path-item">4. 纹理贴图 - Three.js纹理系统</div>
       <div class="path-item">5. 几何变换 - Vertex Shader变换</div>
       <div class="path-item">6. 光照效果 - 内置光照系统扩展</div>
@@ -106,6 +106,53 @@
         <br>• Three.js自动处理顶点变换
       </p>
       <canvas id="canvas1"></canvas>
+    </div>
+
+    <div class="demo-section">
+      <h3 class="demo-title">Demo 2: 时间动画</h3>
+      <p class="demo-description">
+        学习如何在shader中使用时间参数创建动态效果。通过performance.now()更新uniform实现实时动画。
+        <br>• 时间驱动的波浪图案
+        <br>• 颜色在多种色彩间循环变化
+        <br>• sin/cos函数创建周期性动画
+      </p>
+      <canvas id="canvas2"></canvas>
+    </div>
+
+    <div class="demo-section">
+      <h3 class="demo-title">Demo 3: SDF图形绘制</h3>
+      <p class="demo-description">
+        学习距离场(SDF)技术绘制复杂图形。SDF是现代shader中创建图形的强大工具。
+        <br>• 圆形、矩形、圆角矩形的SDF函数
+        <br>• 图形变换：旋转、缩放、位移
+        <br>• 平滑混合多个图形
+        <br>• 边缘光晕和高光效果
+      </p>
+      <canvas id="canvas3"></canvas>
+    </div>
+
+    <div class="demo-section">
+      <h3 class="demo-title">Demo 4: 波浪效果</h3>
+      <p class="demo-description">
+        深入学习正弦波动画，创建复杂的波浪图案。展示多种波浪的叠加和干涉效果。
+        <br>• 同心圆波浪从中心扩散
+        <br>• 水平、垂直、对角线波浪
+        <br>• 双点源干涉图案
+        <br>• 波峰高光和深度感渲染
+      </p>
+      <canvas id="canvas4"></canvas>
+    </div>
+
+    <div class="demo-section">
+      <h3 class="demo-title">Demo 5: 高级SDF技术</h3>
+      <p class="demo-description">
+        掌握SDF的高级应用：复杂图形、布尔运算、空间变换。展示SDF在复杂图形设计中的强大能力。
+        <br>• 六边形、星形等复杂SDF函数
+        <br>• 布尔运算：并集、差集、交集
+        <br>• 空间变换：扭曲、重复、旋转
+        <br>• 平滑运算和高级混合技术
+      </p>
+      <canvas id="canvas5"></canvas>
     </div>
   </div>
 
